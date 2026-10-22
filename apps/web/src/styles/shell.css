@@ -1,0 +1,128 @@
+.app-shell {
+  min-height: 100vh;
+}
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 10;
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  padding: 28px 22px;
+  color: white;
+  background: var(--navy);
+}
+.sidebar-logo {
+  width: 178px;
+  height: 58px;
+  margin-bottom: 42px;
+  object-fit: contain;
+  object-position: left center;
+  filter: brightness(0) invert(1);
+}
+.sidebar nav {
+  display: grid;
+  gap: 6px;
+}
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 12px;
+  color: #bfd0e5;
+  background: transparent;
+  text-align: left;
+  font-weight: 600;
+}
+.nav-button span {
+  width: 22px;
+  color: var(--aqua);
+  font-size: 1.15rem;
+  text-align: center;
+}
+.nav-button:hover,
+.nav-button.active {
+  color: white;
+  background: #123461;
+}
+.track-shortcut {
+  margin-top: auto;
+  padding: 14px;
+  border: 1px solid #315071;
+  border-radius: 12px;
+  color: #dcecff;
+  background: transparent;
+  text-align: left;
+}
+.user-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 8px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #294666;
+}
+.user-card span {
+  font-weight: 700;
+}
+.user-card small {
+  grid-column: 1;
+  color: #8ca6c6;
+  text-transform: capitalize;
+}
+.user-card button {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border: 0;
+  color: #9cb5d1;
+  background: transparent;
+}
+.app-content {
+  min-height: 100vh;
+  margin-left: 250px;
+  padding: 48px clamp(28px, 5vw, 74px);
+}
+.page-stack {
+  display: grid;
+  gap: 28px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.page-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+}
+.page-heading h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+.page-intro {
+  max-width: 470px;
+  margin-bottom: 6px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.eyebrow {
+  margin-bottom: 8px;
+  color: var(--blue);
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.eyebrow-light {
+  color: #6cf3ea;
+}
+.muted {
+  color: var(--muted);
+}
+.optional {
+  margin-left: 6px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 400;
+}
