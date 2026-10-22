@@ -1,6 +1,6 @@
 {
   "name": "babelwash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "description": "Local-first laundry operations and customer order platform.",
@@ -27,7 +27,7 @@
     "quality": "pnpm format:check && pnpm check:files && pnpm lint && pnpm typecheck && pnpm test && pnpm build",
     "setup:local": "node scripts/setup-local.mjs",
     "test": "pnpm --filter @babelwash/domain build && vitest run",
-    "test:e2e": "playwright test",
+    "test:e2e": "pnpm --filter @babelwash/domain build && playwright test",
     "typecheck": "pnpm --filter @babelwash/domain build && pnpm -r typecheck"
   },
   "devDependencies": {
